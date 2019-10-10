@@ -1,0 +1,37 @@
+{
+    "name": "californiamountainsnake/manticore-http-client",
+    "type": "library",
+    "description": "This is a simple PHP client library for Manticore search (based on Sphinx search).",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CaliforniaMountainSnake",
+            "email": "CaliforniaMountainSnake1@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "californiamountainsnake/php-utils": "~1.0.5"
+    },
+    "require-dev": {
+        "ext-dom": "*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CaliforniaMountainSnake\\ManticoreClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "\"vendor/bin/phpunit\""
+        ]
+    }
+}
